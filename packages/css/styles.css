@@ -170,6 +170,15 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+.flex {
+  display: flex;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -391,6 +400,7 @@ img {
   display: inline-flex;
   align-items: center;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 .button--small {
@@ -517,51 +527,51 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__css {
-  width: 80%;
+  width: 100%;
 }
 
 .skills__js {
-  width: 60%;
+  width: 100%;
 }
 
 .skills__wordpress {
-  width: 70%;
+  width: 100%;
 }
 
 .skills__python {
-  width: 60%;
+  width: 100%;
 }
 
 .skills__tab {
-  width: 70%;
+  width: 100%;
 }
 
 .skills__sql {
-  width: 50%;
+  width: 100%;
 }
 
 .skills__google {
-  width: 70%;
+  width: 100%;
 }
 
 .skills__bank {
-  width: 80%;
+  width: 100%;
 }
 
 .skills__google {
-  width: 70%;
+  width: 100%;
 }
 
 .skills__counter {
-  width: 80%;
+  width: 100%;
 }
 
 .skills__office {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__close .skills__list {
@@ -620,6 +630,7 @@ img {
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  margin-top: 20px;
   /* margin-bottom: var(--mb-1) */
 }
 
@@ -756,7 +767,20 @@ img {
 }
 
 .portfolio__content {
-  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  /* box-shadow: 0 0 10px black; */
+  border: 3px dotted black;
+  border-radius: 10px;
+  margin: 20px;
+  height: auto;
+}
+
+.portfolio_ {
+  display: none;
 }
 
 .portfolio__img {
@@ -928,10 +952,10 @@ img {
 
 /*==================== FOOTER ====================*/
 .footer {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
-.footer__container {
+/* .footer__container {
   row-gap: 3.5rem;
 }
 
@@ -966,27 +990,27 @@ img {
 
 .footer__social:hover {
   color: var(--first-color-lighter);
-}
+} */
 
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--mb-3);
+  color: black;
+  /* margin-top: var(--mb-3); */
 }
 
-.footer__title,
+/* .footer__title,
 .footer__subtitle,
 .footer__link,
 .footer__social {
   color: #fff;
-}
+} */
 
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
   right: 1rem;
-  bottom: -20%;
+  bottom: 50px;
   background-color: var(--first-color);
   opacity: 0.8;
   padding: 0 0.3rem;
@@ -1127,11 +1151,17 @@ img {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio__content{
+    align-items: center;
+  }
+  .portfolio__img {
+    width: 400px;
+  }
 
   .qualification__sections {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 0.6fr;
-    justify-content: center;
+    justify-content: center; */
   }
 
   @media screen and (min-width: 768px) {
@@ -1222,7 +1252,7 @@ img {
     }
 
     .qualification__sections {
-      grid-template-columns: 0.5fr;
+      /* grid-template-columns: 0.5fr; */
     }
     .services__container {
       grid-template-columns: repeat(3, 218px);
@@ -1239,10 +1269,17 @@ img {
       width: 450px;
     }
     .portfolio__img {
-      width: 320px;
+      width: 80%;
     }
     .portfolio__content {
       align-items: center;
+    }
+    .portfolio_ {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
     }
     .project {
       text-align: initial;
@@ -1327,4 +1364,12 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.qualification__data ul {
+  list-style: circle;
+}
+
+.qualification__data ul li {
+  font-size: 14px;
 }
