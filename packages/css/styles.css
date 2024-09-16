@@ -538,6 +538,14 @@ img {
   width: 100%;
 }
 
+.skills__nuxt {
+  width: 90%;
+}
+
+.skills__graphql {
+  width: 90%;
+}
+
 .skills__wordpress {
   width: 100%;
 }
@@ -572,6 +580,18 @@ img {
 
 .skills__office {
   width: 100%;
+}
+
+.skills__spring {
+  width: 90%;
+}
+
+.skills__larabel {
+  width: 95%;
+}
+
+.skills__redis {
+  width: 85%;
 }
 
 .skills__close .skills__list {
@@ -1372,4 +1392,37 @@ img {
 
 .qualification__data ul li {
   font-size: 14px;
+}
+
+.stretch__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  background-color: #00000077;
+  display: flex;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .3s;
+  overflow: hidden;
+}
+
+#img {
+  width: 50%;
+}
+
+#image__close {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+#image__close:hover {
+  color: black;
 }

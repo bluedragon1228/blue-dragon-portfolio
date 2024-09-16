@@ -13,13 +13,13 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
-        <title>Gianluca</title>
+        <title>Alessandro</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Gianluca</a>
+                <a href="#" class="nav__logo">Alessandro</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -58,7 +58,7 @@
                 <div class="nav__btns">
                     <!-- Theme change button -->
 
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
@@ -85,7 +85,7 @@
                             </a> -->
                         </div>
 
-                        <div class="home__img">
+                        <div class="home__img" onclick="handle('pras-1.jpeg')">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -98,13 +98,13 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="" xlink:href="packages/images/pras-1.jpeg"/>
+                                    <image class="home__blob-img" x="" xlink:href="packages/images/pras-1.jpeg" id="pras-1.jpeg"/>
                                 </g>
                             </svg>
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Gianluca</h1>
+                            <h1 class="home__title">Hi, I'am Alessandro</h1>
                             <h3 class="home__subtitle">Senior Full Stack Developer</h3>
                             <p class="home__description">High level experience in Full Stack and Software.</p>
                             <!-- <a href="#contact" class="button button--flex home__button">
@@ -129,12 +129,15 @@
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="packages/images/pras-2.jpeg" alt="" class="about__img">
+                    <div>
+                        <img src="packages/images/pras-2.jpeg" onclick="handle('pras-2.jpeg')" alt="" class="about__img">
+                        <img src="packages/images/pras-3.png" onclick="handle('pras-3.png')" alt="" class="about__img">
+                    </div>
                     <div class="about__data">
                         <p class="about__description">
-                            Gianluca is passionate about full-stack development, REST architecture and Agile methodology,
-                             and JavaScript as his primary programming language. Gianluca has been working with IT for more 
-                             than 12 years, and he has 9 years of experience. Gianluca specializes in JavaScript, using SPA 
+                            Alessandro is passionate about full-stack development, REST architecture and Agile methodology,
+                             and JavaScript as his primary programming language. Alessandro has been working with IT for more 
+                             than 12 years, and he has 9 years of experience. Alessandro specializes in JavaScript, using SPA 
                              frameworks like AngularJS, Angular, React, and Node.js for back-end development. 
                         </p>
                         <div class="about__info">
@@ -153,7 +156,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="./1.pdf" class="button button--flex">
+                            <a download="" href="./Alessandro.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -269,19 +272,19 @@
                                 <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">Nuxt</h3>
-                                       <span class="skills__number">100%</span>
+                                       <span class="skills__number">90%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__office"></span>
+                                       <span class="skills__percentage skills__nuxt"></span>
                                    </div>
                                 </div>
                                 <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">GraphQL</h3>
-                                       <span class="skills__number">100%</span>
+                                       <span class="skills__number">90%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__office"></span>
+                                       <span class="skills__percentage skills__graphql"></span>
                                    </div>
                                 </div>
                             </div>
@@ -340,28 +343,28 @@
                                <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">Springboot</h3>
-                                       <span class="skills__number">100%</span>
+                                       <span class="skills__number">90%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__wordpress"></span>
+                                       <span class="skills__percentage skills__spring"></span>
                                    </div>
                                </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">Larabel</h3>
-                                       <span class="skills__number">100%</span>
+                                       <span class="skills__number">95%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__wordpress"></span>
+                                       <span class="skills__percentage skills__larabel"></span>
                                    </div>
                                </div>
                                <div class="skills__data">
                                    <div class="skills__titles">
                                        <h3 class="skills__name">Redis</h3>
-                                       <span class="skills__number">100%</span>
+                                       <span class="skills__number">85%</span>
                                    </div>
                                    <div class="skills__bar">
-                                       <span class="skills__percentage skills__wordpress"></span>
+                                       <span class="skills__percentage skills__redis"></span>
                                    </div>
                                </div>
                            </div>
@@ -702,7 +705,7 @@
         <!--==================== PORTFOLIO 1 ====================-->
         
             <div class="portfolio__content grid ">
-                <img src="./packages/images/mobile.png" alt="" class="portfolio__img">
+                <img src="./packages/images/mobile.png" onclick="handle('mobile.png')" alt="" class="portfolio__img" id="port_img" onclick="">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Mobile Growth and Attribution Platform Development</h3>
@@ -719,7 +722,7 @@
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid ">
-                <img src="./packages/images/timesunion.png" alt="" class="portfolio__img">
+                <img src="./packages/images/timesunion.png" onclick="handle('timesunion.png')" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Times Union News Platform Development</h3>
@@ -736,7 +739,7 @@
             <!--==================== PORTFOLIO 3 ====================-->
         
             <div class="portfolio__content grid">
-                <img src="./packages/images/constructor.png" alt="" class="portfolio__img">
+                <img src="./packages/images/constructor.png" onclick="handle('constructor.png')" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">GE Appliances Contractor Finder Platform</h3>
@@ -753,7 +756,7 @@
             <!--==================== PORTFOLIO 4 ====================-->
 
             <div class="portfolio__content grid">
-                <img src="./packages/images/marcket.png" alt="" class="portfolio__img">
+                <img src="./packages/images/marcket.png" onclick="handle('marcket.png')" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Aberdeen News Job Marketplace Development</h3>
@@ -771,7 +774,7 @@
             <!--==================== PORTFOLIO 5 ====================-->
 
             <div class="portfolio__content grid">
-                <img src="./packages/images/simplisafe.png" alt="" class="portfolio__img">
+                <img src="./packages/images/simplisafe.png" onclick="handle('simplisafe.png')" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">SimpliSafe Home Security Website Development</h3>
@@ -789,7 +792,7 @@
             <!--==================== PORTFOLIO 6 ====================-->
 
             <div class="portfolio__content grid">
-                <img src="./packages/images/sears.png" alt="" class="portfolio__img">
+                <img src="./packages/images/sears.png" onclick="handle('sears.png')" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Sears E-commerce Platform Development</h3>
@@ -1031,7 +1034,7 @@
                     </a>
                 </div>
             </div> -->
-            <p class="footer__copy">&#169; Gianluca. All rights reserved.</p>
+            <p class="footer__copy">&#169; Alessandro. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1046,6 +1049,11 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
+
+    <div class="stretch__image">
+        <img src="" alt="!" id="img">
+        <span id="image__close" onclick="handle__close()">&times;</span>
+    </div>
 </body>
 
 </html>

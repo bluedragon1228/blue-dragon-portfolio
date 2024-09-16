@@ -210,3 +210,15 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+//If you click image alert a modal
+// var image = document.getElementById("Pot_img")
+function handle(indeximage){
+  // document.getElementById("hhhh").innerHTML = "asdfasrtyertertertertertdf";
+  document.getElementsByClassName("stretch__image")[0].style.height = "100vh";
+  document.getElementById("img").setAttribute("src", `./packages/images/${indeximage}`);
+}
+
+function handle__close() {
+  document.getElementsByClassName("stretch__image")[0].style.height = "0";
+}
