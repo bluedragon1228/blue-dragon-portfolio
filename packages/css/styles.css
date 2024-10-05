@@ -1426,3 +1426,11 @@ img {
 #image__close:hover {
   color: black;
 }
+
+.myuniversity div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
